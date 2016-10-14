@@ -15,7 +15,8 @@
 
 buildscript {
   repositories {
-    mavenCentral()
+    // mavenCentral()
+    maven{ url 'http://maven.net.cn/content/groups/public/'}
   }
   apply from: file('gradle/buildscript.gradle'), to: buildscript
 }
