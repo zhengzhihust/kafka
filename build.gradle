@@ -23,7 +23,8 @@ buildscript {
 allprojects {
   apply plugin: 'idea'
   repositories {
-    mavenCentral()
+    //mavenCentral()
+    maven{ url 'http://maven.net.cn/content/groups/public/'}
   }
 }
 
