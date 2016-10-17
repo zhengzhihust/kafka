@@ -15,8 +15,12 @@
 
 buildscript {
   repositories {
-    // mavenCentral()
+    maven{ url 'http://maven.oschina.net/content/groups/public/'}
+    maven{ url 'http://repo2.maven.org/maven2/'}
+    maven{ url 'http://uk.maven.org/maven2/'}
+    maven{ url 'http://mirrors.ibiblio.org/pub/mirrors/maven2/'}
     maven{ url 'http://maven.net.cn/content/groups/public/'}
+    mavenCentral()
   }
   apply from: file('gradle/buildscript.gradle'), to: buildscript
 }
@@ -24,8 +28,12 @@ buildscript {
 allprojects {
   apply plugin: 'idea'
   repositories {
-    //mavenCentral()
+    maven{ url 'http://maven.oschina.net/content/groups/public/'}
+    maven{ url 'http://repo2.maven.org/maven2/'}
+    maven{ url 'http://uk.maven.org/maven2/'}
+    maven{ url 'http://mirrors.ibiblio.org/pub/mirrors/maven2/'}
     maven{ url 'http://maven.net.cn/content/groups/public/'}
+    mavenCentral()
   }
 }
 
